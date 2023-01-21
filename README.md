@@ -60,5 +60,7 @@ Link to your GitHub Repository
 Link to your deployed Github Pages app
 Project Examples (From previous cohorts)
 example1 https://dmoney48.github.io/Tamagotchi-Mini-Project/ 
+
 example2 (https://marcwolfe.github.io/Tamagotchi-Project/)
+
 example3 https://dmaz009.github.io/Tamagotchi-Project/ 

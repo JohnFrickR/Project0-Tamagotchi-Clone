@@ -51,7 +51,7 @@ Add an exercise() method to your Tamagotchi, that affects certain properties
 Add anything you can think of... use your imagination!
 Submission
 How do I turn in the project?
-Your project is due on Wednesday, Jan 25th. You will present your project and show your code to classmates and instructors.
+Your project is due on Thursday, Jan 26th, 2023. You will present your project and show your code to classmates and instructors.
 
 ✔️ Submit your project by adding an issue using the Project Submission issue template. https://git.generalassemb.ly/seirfx-dahlia/tamagotchi-mini-project/issues/new?assignees=&labels=&template=project_submission.md&title=Your+Name 
 

@@ -1,5 +1,6 @@
 # Project0-Tamagotchi-Clone
 This is a project given to me by General Assembly.
+
 Tamagotchi Mini-Project
 Description
 Let's use our front-end web development skills to create a "living" pet! We'll use HTML, CSS, and JavaScript to interact with our pet.

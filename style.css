@@ -1,3 +1,43 @@
-body {
-    
+div.pet {
+   position: center;
+
 }
+
+.pet {
+    display: flex;
+    justify-content: bottom;
+    animation-name: move;
+    animation-duration: infinite;
+}
+
+
+#tomo{
+    position: relative;
+    top: 600px;
+    left: 100px;
+    /* border: 10px solid;
+    border-color: red; */
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+} 
+
+.box {
+    color: white;
+    border: solid;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 200px;
+    background-color: black;
+}
+
+.header {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+} 

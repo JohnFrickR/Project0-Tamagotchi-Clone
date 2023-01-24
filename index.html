@@ -10,19 +10,60 @@
 </head>
 
 <body>
-    <img class="main-background"
-        src="https://images.unsplash.com/photo-1672927964531-1eb96f288816?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        alt="Building in Japan">
-    <!-- The above picture is from Unsplash.com, do i need to cite? -->
-    <div>
-        <img src="https://e7.pngegg.com/pngimages/272/234/png-clipart-agumon-palmon-metalgreymon-digimon-world-ds-digimon-thumbnail.png"
-            alt="Palmon the digimon">
+
+    <div class="header">
+        <header class="header">
+           <h1> Welcome to Digigotchi!</h1>
+        </header>
     </div>
 
+    <style>
+        body,
+        html {  
+            height: 100%;
+            margin: 0px;
+            /* The image used */
+            background-image: url("https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80");
 
+            /* Full height */
+            height: 100%;
 
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 
-    <script src="./app.js"></script>
+    <div id="tomo" class="pet">
+         <img src="png-clipart-agumon-palmon.png"
+            alt="Palmon the digimon">
+            <img class="pet2" src="png-augumon.png"
+            alt="Palmon the digimon">
+    </div> 
+    <!-- https://e7.pngegg.com/pngimages/272/234/png-clipart-agumon-palmon-metalgreymon-digimon-world-ds-digimon-thumbnail.png 
+    this is the original img link-->
+    <!-- This is from pngegg.com, not original material 
+    palmon is a digimon trademarked by that company, also not original material-->
+
+    
+    <div id="stats" class="box">
+            <div>
+            <span id="stat1">Hunger: 10</span>
+            <span id="stat2">Sleep: 10</span>
+            <span id="stat3">Boredom: 10</span>
+            <span id="stat4">Age: 0</span>
+    </div>
+
+    <div id="buttons" class="box2">
+        <button class="feed">Feed Me Please</button>
+        <button class="sleep">Let Me Sleep</button>
+        <button class="bored">Let's do something fun</button>
+    </div>
+    
+    <script src="./app.js">
+        
+    </script>
 </body>
 
 </html>

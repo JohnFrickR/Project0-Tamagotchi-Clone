@@ -44,9 +44,13 @@ document.getElementById('name').innerHTML = digigotchi.name
 
 document.getElementById('start').addEventListener("click", function() {
     let name1 = prompt('Please name your pet!', "dog");
-    if (name1 != null){
-        document.getElementById('name').innerHTML = name1
-    } 
+
+    document.getElementById('name').innerHTML = name1;
+
+        setInterval(function () {
+            document.getElementById('stat4').innerHTML = digigotchi.age++;
+        }, 1000);
+
   })
 
 document.getElementById('feed').addEventListener("click", function() {

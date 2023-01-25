@@ -35,6 +35,15 @@ let digigotchi = {
     age: 0
 }
 
+document.getElementById('stat1').innerHTML = digigotchi.hunger
+document.getElementById('stat2').innerHTML = digigotchi.sleepiness
+document.getElementById('stat3').innerHTML = digigotchi.boredom
+document.getElementById('stat4').innerHTML = digigotchi.age
+
+
+function feed() {
+    let feedDigi = document.getElementById('stats1').innerHTML=digigotchi.hunger
+}
 // let rules = ruleList(){
 
 // alert("Welcome to the game of digigotchi!");

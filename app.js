@@ -39,8 +39,15 @@ document.getElementById('stat1').innerHTML = digigotchi.hunger
 document.getElementById('stat2').innerHTML = digigotchi.sleepiness
 document.getElementById('stat3').innerHTML = digigotchi.boredom
 document.getElementById('stat4').innerHTML = digigotchi.age
+document.getElementById('name').innerHTML = digigotchi.name
 
-//digigotchi.name = prompt('Please name your pet!', "dog")
+
+document.getElementById('start').addEventListener("click", function() {
+    let name1 = prompt('Please name your pet!', "dog");
+    if (name1 != null){
+        document.getElementById('name').innerHTML = name1
+    } 
+  })
 
 document.getElementById('feed').addEventListener("click", function() {
     document.getElementById('stat1').innerHTML = digigotchi.hunger++

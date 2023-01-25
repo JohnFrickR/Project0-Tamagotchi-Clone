@@ -43,6 +43,16 @@ div.pet {
     left: 200px;
     background-color: black;
 }
+.box3 {
+    color: white;
+    border: solid;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 200px;
+    background-color: black;
+}
 
 .header {
     color: white;

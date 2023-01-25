@@ -46,7 +46,7 @@
     <!-- This is from pngegg.com, not original material 
     palmon is a digimon trademarked by that company, also not original material-->
 
-    
+    <div></div>
     <div id="stats" class="box">
             
             <div>Hunger:<span id="stat1">10</span></div>
@@ -54,19 +54,19 @@
             <div>Boredom:<span id="stat3">10</span></div>
             <div>Age:<span id="stat4">0</span></div>
     </div>
-    <!-- <div id="stats2" class="box2">
+    <div id="stats2" class="box2">
          <ul>   
-        <li id="stat1">10</li>
-        <li id="stat2">10</li>
-        <li id="stat3">10</li>
-        <li id="stat4">0</li>
+        <li >Rules</li>
+        <li >Keep "Hunger","Sleep", and "Boredom" above 0.</li>
+        <li >Click the corresponding buttons below to increase them by 1.</li>
+        <li >To win, you need to keep your pet alive for 1 minute.</li>
         </ul>
-</div> -->
+</div>
 
     <div id="buttons" class="box2">
-        <button class="feed" onclick="feed()">Feed Me Please</button>
-        <button class="sleep">Let Me Sleep</button>
-        <button class="bored">Let's do something fun</button>
+        <button class="feed" id="feed">Feed Me Please</button>
+        <button class="sleep" id="sleep">Let Me Sleep</button>
+        <button class="bored" id="bored">Let's do something fun</button>
     </div>
     
     <script src="./app.js">

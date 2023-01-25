@@ -40,10 +40,19 @@ document.getElementById('stat2').innerHTML = digigotchi.sleepiness
 document.getElementById('stat3').innerHTML = digigotchi.boredom
 document.getElementById('stat4').innerHTML = digigotchi.age
 
+//digigotchi.name = prompt('Please name your pet!', "dog")
 
-function feed() {
-    let feedDigi = document.getElementById('stats1').innerHTML=digigotchi.hunger
-}
+document.getElementById('feed').addEventListener("click", function() {
+    document.getElementById('stat1').innerHTML = digigotchi.hunger++
+  })
+
+document.getElementById('sleep').addEventListener("click", function() {
+    document.getElementById('stat2').innerHTML = digigotchi.sleepiness++
+  })
+
+document.getElementById('bored').addEventListener("click", function() {
+    document.getElementById('stat3').innerHTML = digigotchi.boredom++
+  })
 // let rules = ruleList(){
 
 // alert("Welcome to the game of digigotchi!");

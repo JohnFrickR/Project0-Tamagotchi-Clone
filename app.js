@@ -48,30 +48,52 @@ document.getElementById('start').addEventListener("click", function() {
     document.getElementById('name').innerHTML = name1;
 
         setInterval(function () {
-            document.getElementById('stat4').innerHTML = digigotchi.age++;
+            if(document.getElementById('stat4').innerHTML = digigotchi.age <= 60){
+              document.getElementById('stat4').innerHTML = digigotchi.age++;  
+              alert("Your pet has morphed!");
+              
+            } else return alert("You have won the game and kept your pet alive!")
         }, 1000);
+
+        setInterval(function () {
+            if(document.getElementById('stat1').innerHTML = digigotchi.hunger > 0){
+                document.getElementById('stat1').innerHTML = digigotchi.hunger--;
+            } else return alert("you have starved your pet to death! Game Over!")
+        }, 2000);
+
+        setInterval(function () {
+            if(document.getElementById('stat2').innerHTML = digigotchi.sleepiness > 0){
+                document.getElementById('stat2').innerHTML = digigotchi.sleepiness--;
+            } else return alert("you have deprived your pet of too much sleep! Game Over!")
+        }, 5000);
+
+        setInterval(function () {
+            if(document.getElementById('stat3').innerHTML = digigotchi.boredom > 0){
+               document.getElementById('stat3').innerHTML = digigotchi.boredom--; 
+            } else return alert("you have bored your pet to death! Game Over!") 
+        }, 3000);
 
   })
 
+
 document.getElementById('feed').addEventListener("click", function() {
+    if (document.getElementById('stat1').innerHTML = digigotchi.hunger < 10){
     document.getElementById('stat1').innerHTML = digigotchi.hunger++
+    } else return document.getElementById('stat1').innerHTML = digigotchi.hunger
   })
 
 document.getElementById('sleep').addEventListener("click", function() {
-    document.getElementById('stat2').innerHTML = digigotchi.sleepiness++
-  })
+    if(document.getElementById('stat2').innerHTML = digigotchi.sleepiness < 10){
+      document.getElementById('stat2').innerHTML = digigotchi.sleepiness++  
+    } else return document.getElementById('stat2').innerHTML = digigotchi.sleepiness
+  });
 
 document.getElementById('bored').addEventListener("click", function() {
-    document.getElementById('stat3').innerHTML = digigotchi.boredom++
+    if(document.getElementById('stat3').innerHTML = digigotchi.boredom < 10){
+     document.getElementById('stat3').innerHTML = digigotchi.boredom++   
+    } else return document.getElementById('stat3').innerHTML = digigotchi.boredom
   })
-// let rules = ruleList(){
 
-// alert("Welcome to the game of digigotchi!");
-
-// alert("The rules are simple, keep your pet's hunger, boredom, and sleep stats above zero.");
-
-// alert("To do this, hit the buttons corresponding to each need. You win when your digigotchi is 50!");
-// }
 
 
 

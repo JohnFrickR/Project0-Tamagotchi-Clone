@@ -48,20 +48,33 @@ document.getElementById('start').addEventListener("click", function() {
 
         function ageUp1() {
             setInterval(function () {
-            if (document.getElementById('stat4').innerHTML = digigotchi.age === 30){
+            if (document.getElementById('stat4').innerHTML = digigotchi.age === 20){
                 // clearInterval(ageUp1())
                 document.getElementById('stat4').innerHTML = digigotchi.age++;
                 document.getElementById('pet-img').src = "png-augumon.png"
                 alert("Your pet has morphed!");      
                 // ageUp()
+            } else if (document.getElementById('stat4').innerHTML = digigotchi.age === 30){
+                document.getElementById('stat4').innerHTML = digigotchi.age++;
+                document.getElementById('pet-img').src = "pngegg.png"
+                alert("Your pet has morphed!");
+            } else if (document.getElementById('stat4').innerHTML = digigotchi.age === 40){
+                document.getElementById('stat4').innerHTML = digigotchi.age++;
+                document.getElementById('pet-img').src = "pngegg (1).png"
+                alert("Your pet has morphed!");
             }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60){
               document.getElementById('stat4').innerHTML = digigotchi.age++;  
+            }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60 && (document.getElementById('stat4').innerHTML = digigotchi.age > 20)){
+              document.getElementById('stat4').innerHTML = digigotchi.age++;  
             }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60 && (document.getElementById('stat4').innerHTML = digigotchi.age > 30)){
+              document.getElementById('stat4').innerHTML = digigotchi.age++;  
+            }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60 && (document.getElementById('stat4').innerHTML = digigotchi.age > 40)){
               document.getElementById('stat4').innerHTML = digigotchi.age++;  
             } else return alert("You have won the game and kept your pet alive!")
         }, 1000);
         }
-        ageUp1();
+        ageUp1(); 
+        
         
 
         // setInterval(function () {

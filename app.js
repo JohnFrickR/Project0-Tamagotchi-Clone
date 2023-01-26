@@ -118,7 +118,7 @@ document.getElementById('start').addEventListener("click", function() {
 
 document.getElementById('feed').addEventListener("click", function() {
     if (document.getElementById('stat1').innerHTML = digigotchi.hunger < 10){
-    document.getElementById('stat1').innerHTML = digigotchi.hunger++
+        document.getElementById('stat1').innerHTML = digigotchi.hunger++
     } else return document.getElementById('stat1').innerHTML = digigotchi.hunger
   })
 

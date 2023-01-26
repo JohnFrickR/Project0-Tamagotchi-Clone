@@ -48,12 +48,17 @@ document.getElementById('start').addEventListener("click", function() {
     document.getElementById('name').innerHTML = name1;
 
         setInterval(function () {
-            if(document.getElementById('stat4').innerHTML = digigotchi.age <= 60){
+            if(document.getElementById('stat4').innerHTML = digigotchi.age < 60){
               document.getElementById('stat4').innerHTML = digigotchi.age++;  
-              alert("Your pet has morphed!");
-              
             } else return alert("You have won the game and kept your pet alive!")
         }, 1000);
+
+        // setInterval(function () {
+        //     if(document.getElementById('stat4').innerHTML = digigotchi.age == 30){  
+        //       alert("Your pet has morphed!");
+        //       document.getElementById('pet-img').src = "png-augumon.png"
+        //     } else return
+        // }, 1000);
 
         setInterval(function () {
             if(document.getElementById('stat1').innerHTML = digigotchi.hunger > 0){
@@ -83,6 +88,7 @@ document.getElementById('feed').addEventListener("click", function() {
   })
 
 document.getElementById('sleep').addEventListener("click", function() {
+    document.getElementById()
     if(document.getElementById('stat2').innerHTML = digigotchi.sleepiness < 10){
       document.getElementById('stat2').innerHTML = digigotchi.sleepiness++  
     } else return document.getElementById('stat2').innerHTML = digigotchi.sleepiness

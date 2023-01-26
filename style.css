@@ -1,15 +1,26 @@
 div.pet {
-   position: center;
-
+   position: relative;
+   display: flex;
+   justify-content: bottom;
+   animation-name: move;
+   animation-duration: 6s;
+   animation-iteration-count: 15;
 }
 
-.pet {
+/* .pet {
     display: flex;
     justify-content: bottom;
-    animation-name: move;
+    animation-name: pet;
     animation-duration: infinite;
-}
+} */
 
+@keyframes move {
+    0%   {left:0px; bottom:0px;}
+    25%  {left:200px; bottom:0px;}
+    50%  {left:200px; bottom:200px;}
+    75%  {left:0px; bottom:200px;}
+    100% {left:0px; bottom:0px;}
+  }
 
 #tomo{
     position: relative;

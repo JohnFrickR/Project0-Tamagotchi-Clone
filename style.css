@@ -7,7 +7,6 @@ div.pet {
    animation-duration: 6s;
    animation-iteration-count: 15;
 }
-
 @keyframes move {
     0%   {left:0px; bottom:0px;}
     25%  {left:200px; bottom:0px;}
@@ -84,3 +83,12 @@ div.pet {
 #stat {
     margin: 10px;
 }
+/* html {
+    height: 100%;
+            margin: 0px;
+            background-image: url("https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+} */

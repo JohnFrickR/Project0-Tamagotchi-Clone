@@ -44,14 +44,25 @@ document.getElementById('name').innerHTML = digigotchi.name
 
 document.getElementById('start').addEventListener("click", function() {
     let name1 = prompt('Please name your pet!', "dog");
-
     document.getElementById('name').innerHTML = name1;
 
-        setInterval(function () {
-            if(document.getElementById('stat4').innerHTML = digigotchi.age < 60){
+        function ageUp1() {
+            setInterval(function () {
+            if (document.getElementById('stat4').innerHTML = digigotchi.age === 30){
+                // clearInterval(ageUp1())
+                document.getElementById('stat4').innerHTML = digigotchi.age++;
+                document.getElementById('pet-img').src = "png-augumon.png"
+                alert("Your pet has morphed!");      
+                // ageUp()
+            }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60){
+              document.getElementById('stat4').innerHTML = digigotchi.age++;  
+            }   else if(document.getElementById('stat4').innerHTML = digigotchi.age < 60 && (document.getElementById('stat4').innerHTML = digigotchi.age > 30)){
               document.getElementById('stat4').innerHTML = digigotchi.age++;  
             } else return alert("You have won the game and kept your pet alive!")
         }, 1000);
+        }
+        ageUp1();
+        
 
         // setInterval(function () {
         //     if(document.getElementById('stat4').innerHTML = digigotchi.age == 30){  
@@ -80,6 +91,17 @@ document.getElementById('start').addEventListener("click", function() {
 
   })
 
+//   function ageUp(){
+//     document.getElementById('pet-img').src = "png-augumon.png"
+//     setInterval(function (){
+//         setInterval(function () {
+//             if(document.getElementById('stat4').innerHTML = digigotchi.age < 60){
+//               document.getElementById('stat4').innerHTML = digigotchi.age++;  
+//             } else clearInterval(ageUp()) 
+//            return alert("You have won the game and kept your pet alive!")
+//         }, 1000);
+//     })
+//   }
 
 document.getElementById('feed').addEventListener("click", function() {
     if (document.getElementById('stat1').innerHTML = digigotchi.hunger < 10){
@@ -88,7 +110,6 @@ document.getElementById('feed').addEventListener("click", function() {
   })
 
 document.getElementById('sleep').addEventListener("click", function() {
-    document.getElementById()
     if(document.getElementById('stat2').innerHTML = digigotchi.sleepiness < 10){
       document.getElementById('stat2').innerHTML = digigotchi.sleepiness++  
     } else return document.getElementById('stat2').innerHTML = digigotchi.sleepiness

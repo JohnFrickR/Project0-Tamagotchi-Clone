@@ -3,6 +3,7 @@ div.pet {
    display: flex;
    justify-content: bottom;
    animation-name: move;
+   animation-delay: 5s;
    animation-duration: 6s;
    animation-iteration-count: 15;
 }
@@ -47,6 +48,7 @@ div.pet {
 .box2 {
     color: white;
     border: solid;
+    font-size: 18px;
     max-width: 40%;
     display: flex;
     justify-content: center;
@@ -58,6 +60,7 @@ div.pet {
     color: white;
     border: solid;
     max-width: 40%;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     position: relative;

@@ -40,7 +40,7 @@ Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your
 
 You pet should die if Hunger, Boredom, or Sleepiness hits 10.
 
-Morph your pet at certain ages.
+Morph your pet at certain ages. 
 
 Animate your pet across the screen while it's alive.
 
